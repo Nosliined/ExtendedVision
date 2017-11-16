@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TaskService } from './todo/task.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'todo-app',
+  template: `<todo-task></todo-task>`,
+  providers: [ TaskService ]
 })
 export class AppComponent {
   title = 'app';
